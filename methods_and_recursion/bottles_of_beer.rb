@@ -22,7 +22,7 @@ def beer_song(number_of_bottles)
     puts "Take one down and pass it around, #{pluralize(number_of_bottles)} of beer on the wall. \n \n"
     beer_song(number_of_bottles)
   else
-    puts "#{pluralize(number_of_bottles)} of beer on the wall, #{pluralize(number_of_bottles).capitalize} of beer."
+    puts "#{pluralize(number_of_bottles)} of beer on the wall, #{pluralize(number_of_bottles).downcase} of beer."
     puts "Go to the store and buy some more, 99 bottles of beer on the wall."
   end
 end
