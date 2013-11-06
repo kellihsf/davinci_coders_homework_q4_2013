@@ -3,7 +3,7 @@
 numbers = (1..10).to_a
 
 puts "#{numbers.join('...')}..."
-puts "T-#{numbers.reverse.join(', ')}... BLASTOFF!"
+puts "T-#{numbers.reverse.join(', ')}...  BLASTOFF!"
 puts "The last element is #{numbers.last}"
 puts "The first element is #{numbers.first}"
 puts "The third element is #{numbers[2]}"
@@ -14,6 +14,9 @@ puts "The first four elements are '#{numbers[0...4].join(', ')}'"
 numbers.delete(5)
 numbers.delete(6)
 numbers.delete(7)
+
+# numbers -= [5,6,7]
+# also works for lines 14-16
 
 puts "If we delete 5, 6, and 7 from the numbers, we're left with [#{numbers.join(',')}]"
 puts "If we add 5 at the beginning of the numbers, we're left with [#{numbers.unshift(5).join(',')}]"
